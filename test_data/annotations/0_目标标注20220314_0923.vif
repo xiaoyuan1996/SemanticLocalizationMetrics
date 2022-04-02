@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<判读标注 longitudeoffset="0" latitudeoffset="0" lonpixel="1" latpixel="1" prjInfo="" version="1.0" type="AIOCore.Source.GxVecSource" imageSource="C:\Users\iecas\Desktop\原始数据\PNG格式\0.jpg">
+  <Style />
+  <Children>
+    <Child typename="VectorItem" name="矩形1" description="" type="AIOCore.Layer.GxRectangle">
+      <Style>
+        <Pen type="AIOCore.Layer.GDIPlusPen">
+          <PenStyle color="FFFFFF00" width="0.176" startCap="0" endCap="0" joinStyle="0" lineDashStyle="5" lineDashPattern="3" />
+        </Pen>
+        <TextPen type="AIOCore.Layer.GDIPlusPen">
+          <PenStyle color="FFFF0000" width="0.176" startCap="0" endCap="0" joinStyle="0" lineDashStyle="5" lineDashPattern="3" />
+        </TextPen>
+        <Brush type="AIOCore.Layer.GDIPlusBrush">
+          <SolidBrush color="AFF0000" />
+        </Brush>
+        <Font type="AIOCore.Layer.GDIFont">
+          <Font name="宋体" size="15.75" bold="False" italic="False" underline="False" color="FFFFFF00" />
+        </Font>
+        <Point pointShape="0" pointSize="5" showInfo="False" type="AIOCore.Layer.GDIPlusPoint">
+          <DefaultBrush type="AIOCore.Layer.GDIPlusBrush">
+            <SolidBrush color="FFFF0000" />
+          </DefaultBrush>
+          <OutLinePen type="AIOCore.Layer.GDIPlusPen">
+            <PenStyle color="FFFFFF00" width="1" startCap="0" endCap="0" joinStyle="0" lineDashStyle="0" lineDashPattern="" />
+          </OutLinePen>
+          <DefaultInfoBrush type="System.Drawing.SolidBrush">
+            <SolidBrush color="#FF0000" />
+          </DefaultInfoBrush>
+          <DefaultInfoFont type="System.Drawing.Font">
+            <TextFont font="Mistral, 8.25pt" />
+          </DefaultInfoFont>
+        </Point>
+      </Style>
+      <GeoShape>
+        <GeoShapePoint x="1882.26806640625" y="-203.692886352539" />
+        <GeoShapePoint x="1743.04565429688" y="-1729.76953125" />
+        <GeoShapePoint x="2701.05908203125" y="-1817.16821289063" />
+        <GeoShapePoint x="2840.28173828125" y="-291.091522216797" />
+      </GeoShape>
+    </Child>
+  </Children>
+</判读标注>
