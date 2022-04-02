@@ -8,6 +8,10 @@ from model_init import model_init
 from model_encoder import image_encoder, text_encoder, cosine_sim
 import utils
 
+import sys
+sys.path.append("..")
+from evaluations.SLM import SLM
+
 def split_image(img_path, steps, cache_path):
     subimage_files_dir = os.path.join(cache_path, os.path.basename(img_path).split(".")[0])
 
@@ -143,6 +147,11 @@ if __name__ == "__main__":
     )
 
     # start eval
+    slm_metric = SLM()
+    points = [
+        [[1882, 203], [1743, 1729], [2701, 1817], [2840, 291]],
+    ]
+
     text = "there is a green pond next to the gray road."
 
     for idx, img in enumerate(os.listdir(opt.src_data_path)):
@@ -160,3 +169,4 @@ if __name__ == "__main__":
         generate_heatmap(img_path, text, heatmap_path, addmap_path, probmap_path, opt.cache_path)
 
         # evaluate
+        metrics = slm_metric.evaluate(probmap_path, region_list=points)
