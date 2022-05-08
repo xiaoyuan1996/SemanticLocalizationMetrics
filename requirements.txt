@@ -12,7 +12,7 @@ cfbclient==1.1.0
 cffi==1.14.4
 chardet==4.0.0
 click==8.0.4
-cryptography==3.2
+cryptography==3.3.2
 cycler==0.10.0
 dataclasses==0.8
 decorator==4.4.2
@@ -40,7 +40,7 @@ ipython==7.16.3
 ipython-genutils==0.2.0
 ipywidgets==7.6.3
 jedi==0.17.2
-Jinja2==2.11.2
+Jinja2==2.11.3
 joblib==1.0.1
 jsonschema==3.2.0
 jupyter==1.0.0
