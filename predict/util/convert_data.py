@@ -7,16 +7,13 @@
 # Writen by Kuang-Huei Lee, 2018
 # ---------------------------------------------------------------
 """Convert image features from bottom up attention to numpy array"""
-import os
+import argparse
 import base64
 import csv
+import os
 import sys
-import zlib
-import json
-import argparse
 
 import numpy as np
-
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--imgid_list', default='../data/coco_precomp/train_ids.txt',
