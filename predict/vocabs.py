@@ -4,11 +4,12 @@
 # Writen by YuanZhiqiang, 2021.  Our code is depended on AMFMN
 # ------------------------------------------------------------
 
-import nltk
-from collections import Counter
 import argparse
-import os
 import json
+import os
+from collections import Counter
+
+import nltk
 
 annotations = {
     'coco_splits': ['train_caps.txt', 'val_caps.txt', 'test_caps.txt'],

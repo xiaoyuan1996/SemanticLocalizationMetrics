@@ -1,7 +1,17 @@
-import yaml
-import numpy as np
+# **
+# * Copyright @2022 AI, AIRCAS. (mails.ucas.ac.cn)
+#
+# @author yuanzhiqiang <yuanzhiqiang19@mails.ucas.ac.cn>
+#         2022/05/05
+
+import logging
+import os
 import pickle
-import os,random
+import random
+
+import numpy as np
+import yaml
+
 
 # 加载参数
 def get_config(path_opt="common/config.yaml"):
@@ -129,3 +139,22 @@ def create_random_dirs_name(dir_path):
     while (new_dir == "") or (new_dir in dirs):
         new_dir = "".join(random.sample('1234567890qwertyuiopasdfghjklzxcvbnm', 8))
     return new_dir
+
+# logger
+def get_logger(save_path=None):
+    logger = logging.getLogger()
+    logger.setLevel(logging.INFO)  # 设置打印级别
+    formatter = logging.Formatter('%(asctime)s %(message)s')
+
+    # 设置屏幕打印的格式
+    sh = logging.StreamHandler()
+    sh.setFormatter(formatter)
+    logger.addHandler(sh)
+
+    # 设置log保存
+    if save_path != None:
+        fh = logging.FileHandler(save_path, encoding='utf8')
+        fh.setFormatter(formatter)
+        logger.addHandler(fh)
+
+    return logger

@@ -5,12 +5,8 @@
 # ------------------------------------------------------------
 
 # A revision version from Skip-thoughs
-import torch
-import torch.nn as nn
-from torch.autograd import Variable
-import torch.nn.functional as F
 import skipthoughts
-from skipthoughts import BayesianUniSkip
+
 
 def factory(vocab_words, opt , dropout=0.25):
     if opt['arch'] == 'skipthoughts':

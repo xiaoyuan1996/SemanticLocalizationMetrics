@@ -1,4 +1,3 @@
-
 #encoding:utf-8
 # -----------------------------------------------------------
 # "Exploring a Fine-Grained Multiscale Method for Cross-Modal Remote Sensing Image Retrieval"
@@ -8,10 +7,11 @@
 # ------------------------------------------------------------
 
 import os
-import argparse
-import yaml
+
 import torch
+import yaml
 from vocabs import deserialize_vocab
+
 
 def parser_options(prefix_path, yaml_path):
     # load model options
@@ -26,6 +26,8 @@ def model_init(prefix_path, yaml_path):
     # choose model
     if options['model']['name'] == "AMFMN":
         from layers import AMFMN as models
+    elif options['model']['name'] == "LW_MCR":
+        from layers import LW_MCR as models
     else:
         raise NotImplementedError
 
@@ -47,7 +49,7 @@ def model_init(prefix_path, yaml_path):
 
 if __name__ == "__main__":
     prefix = "./"
-    yaml_path = "option/RSITMD_mca/RSITMD_AMFMN.yaml"
+    yaml_path = "option/RSITMD/RSITMD_LW_MCR.yaml"
 
     model, vocab = model_init(
         prefix_path = "./",
