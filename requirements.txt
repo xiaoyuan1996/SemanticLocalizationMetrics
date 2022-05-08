@@ -12,7 +12,7 @@ cfbclient==1.1.0
 cffi==1.14.4
 chardet==4.0.0
 click==8.0.4
-cryptography==2.1.4
+cryptography==3.2
 cycler==0.10.0
 dataclasses==0.8
 decorator==4.4.2
@@ -138,7 +138,7 @@ tqdm==4.63.1
 traitlets==4.3.3
 transformers==4.8.1
 typing-extensions==3.7.4.3
-urllib3==1.26.2
+urllib3==1.26.5
 wcwidth==0.2.5
 webencodings==0.5.1
 Werkzeug==1.0.1
