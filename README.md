@@ -52,7 +52,12 @@ Start and enjoy!
 
 #### TESTDATA
 
-![visual image](./figure/dataset_info.png)
+|   Parameter   | Value |      Parameter       | Value  |
+| ------------- | ------| ---------------------| -------|
+|  Word Number  | 160   |  Caption Ave Length  |  11.2  |
+| Sample Number | 59    | Ave Resolution Ratio | 0.3245 |
+| Channel Number| 3     |  Ave Region Number   |  1.75  |
+| Image Number  | 22    | Ave Attention Ratio  |  0.068 |
 
 #### METRICS
 
@@ -69,10 +74,40 @@ Start and enjoy!
 ## BASELINES
 
 #### Comparison of SeLo Performance of Different Trainsets
-![visual image](./figure/trainset_diff.png)
+
+|   Trainset   | ↑ Rsu |      ↑ Rda       | ↓ Ras | ↑ Rmi  |
+| ------------- | ------| -------------- | -------| -------|
+|  Sydney  | 0.5844   |  0.5670  |  0.5026 | 0.5496  |
+|  UCM | 0.5821    | 0.4715 | 0.5277 | 0.5160 |
+| RSITMD| **0.6920**     |  **0.6667**   |  **0.3323**  | **0.6772** |
+| RSICD  | 0.6661    | 0.5773  |  0.3875 | 0.6251
+
 
 #### Comparison of SeLo Performance of Different Scales
-![visual image](./figure/scale_diff.png)
+
+Test on Intel(R) Xeon(R) Gold 6226R CPU @2.90GHz and a single NVIDIA RTX 3090 GPU.
+
+|     | Scale-128 | Scale-256 | Scale-512 | Scale-768  | ↑ Rsu |      ↑ Rda       | ↓ Ras | ↑ Rmi  | Time (m)
+| --- | ----------| ----------| ----------| -----------| ----- |      -----       | ----- | -----  | -----  |
+|  s1 |    √      |  √        |           |            | 0.6389 |     0.6488       | 0.2878 | 0.6670  | 33.81 |
+|  s2 |           |  √        |  √        |            | 0.6839 |     0.6030       | 0.3326 | 0.6579 | 14.25 |
+|  s3 |           |           |  √        | √          | 0.6897 |     0.6371       | 0.3933 | 0.6475  | **11.23** |
+|  s4 |    √      |  √        |  √        |            | 0.6682 |     **0.7072**       | **0.2694** | **0.6998**  | 34.60 |
+|  s5 |           |  √        |  √        | √          | **0.6920** |     0.6667       | 0.3323 | 0.6772  | 16.92 |
+|  s6 |    √      |  √        |  √        | √          | 0.6809 |     0.6884       | 0.3025 | 0.6886  | 36.28 |
+
+ 	 	 	 
+ 	 	 	  
+ 
+ 
+ 
+ 
+ 
+
+ 	 	 	 
+ 	 	 	 
+ 	 	 	  	 	 	 
+
 
 #### Comparison of SeLo Performance of Different Retrieval Models
 ![visual image](./figure/model_diff.png)
