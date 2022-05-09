@@ -55,7 +55,7 @@ Start and enjoy!
 |   Parameter   | Value |      Parameter       | Value  |
 | ------------- | ------| ---------------------| -------|
 |  Word Number  | 160   |  Caption Ave Length  |  11.2  |
-| Sample Number | 59    | Ave Resolution Ratio | 0.3245 |
+| Sample Number | 59    | Ave Resolution Ratio (m) | 0.3245 |
 | Channel Number| 3     |  Ave Region Number   |  1.75  |
 | Image Number  | 22    | Ave Attention Ratio  |  0.068 |
 
@@ -73,6 +73,8 @@ Start and enjoy!
 
 ## BASELINES
 
+All experiments all carried out at Intel(R) Xeon(R) Gold 6226R CPU @2.90GHz and a single NVIDIA RTX 3090 GPU.
+
 #### Comparison of SeLo Performance of Different Trainsets
 
 |   Trainset   | ↑ Rsu |      ↑ Rda       | ↓ Ras | ↑ Rmi  |
@@ -85,8 +87,6 @@ Start and enjoy!
 
 #### Comparison of SeLo Performance of Different Scales
 
-Test on Intel(R) Xeon(R) Gold 6226R CPU @2.90GHz and a single NVIDIA RTX 3090 GPU.
-
 |     | Scale-128 | Scale-256 | Scale-512 | Scale-768  | ↑ Rsu |      ↑ Rda       | ↓ Ras | ↑ Rmi  | Time (m)
 | --- | ----------| ----------| ----------| -----------| ----- |      -----       | ----- | -----  | -----  |
 |  s1 |    √      |  √        |           |            | 0.6389 |     0.6488       | 0.2878 | 0.6670  | 33.81 |
@@ -96,26 +96,33 @@ Test on Intel(R) Xeon(R) Gold 6226R CPU @2.90GHz and a single NVIDIA RTX 3090 GP
 |  s5 |           |  √        |  √        | √          | **0.6920** |     0.6667       | 0.3323 | 0.6772  | 16.92 |
 |  s6 |    √      |  √        |  √        | √          | 0.6809 |     0.6884       | 0.3025 | 0.6886  | 36.28 |
 
- 	 	 	 
- 	 	 	  
- 
- 
- 
- 
- 
-
- 	 	 	 
- 	 	 	 
- 	 	 	  	 	 	 
-
 
 #### Comparison of SeLo Performance of Different Retrieval Models
-![visual image](./figure/model_diff.png)
+
+|   Trainset   | ↑ Rsu |      ↑ Rda       | ↓ Ras | ↑ Rmi  | Time (m) |
+| ------------- | ------| -------------- | -------| -------| -------- |
+|  VSE++  | 0.6364   |  0.5829  |  0.4166 | 0.6045  | 15.61
+|  LW-MCR | 0.6698    | 0.6021 | 0.4335 | 0.6167 | **15.47**
+| SCAN| 0.6421     |  0.6132   |  0.3871  | 0.6247 | 16.32
+| CAMP  | 0.6819    | 0.6314  |  0.3912 | 0.6437 | 18.24
+| AMFMN  | **0.6920**    | **0.6667**  |  **0.3323** | **0.6772** | 16.92
 
 #### Analysis of Time Consumption
-![visual image](./figure/time_analse.png)
 
+|   Scale (128, 256)   | Cut |      Sim       | Gnt | Flt  | Total |
+| ------------- | ------| -------------- | -------| -------| ------|
+| Times(m) | 2.85| 20.60 | 7.40| 0.73| 33.81|
+| Rate(%) | 8.42| 60.94 | 21.88| 2.16| -|
+					
+|   Scale (512, 768)   | Cut |      Sim       | Gnt | Flt  | Total |
+| ------------- | ------| -------------- | -------| -------| ------|
+| Times(m) | 0.46| 1.17 | 6.96| 0.67| 11.23|
+| Rate(%) | 4.06| 10.42 | 61.98| 5.97| -|
 
+|   Scale (256, 512, 768)   | Cut |      Sim       | Gnt | Flt  | Total |
+| ------------- | ------| -------------- | -------| -------| ------|
+| Times(m) | 0.93| 5.72 | 7.38| 0.74| 16.92|
+| Rate(%) | 5.52| 33.82 | 43.60| 4.37| -|								
 
 ## IMPLEMENTATION
 
