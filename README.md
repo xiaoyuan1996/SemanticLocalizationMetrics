@@ -1,4 +1,5 @@
-# Learning to Evaluate Peformance of Multi-modal Semantic Localization
+# Learning to Evaluate Peformance of Multi-modal Semantic Localization 
+(undergoing review)
 ##### Author: Zhiqiang Yuan, Chongyang Li, Zhuoying Pan, et. al 
 
 <a href="https://github.com/xiaoyuan1996/retrievalSystem"><img src="https://travis-ci.org/Cadene/block.bootstrap.pytorch.svg?branch=master"/></a>
