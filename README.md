@@ -20,9 +20,9 @@
   * [Testdata](#testdata)
   * [Metrics](#metrics)
 * [Baselines](#baselines)
-  * [Comparison of SeLo Performance of Different Trainsets](#comparison-of-selo-performance-of-different-trainsets)
-  * [Comparison of SeLo Performance of Different Scales](#comparison-of-selo-performance-of-different-scales)
-  * [Comparison of SeLo Performance of Different Retrieval Models](#comparison-of-selo-performance-of-different-retrieval-models)
+  * [Comparison of SeLo Performance on Different Trainsets](#comparison-of-selo-performance-on-different-trainsets)
+  * [Comparison of SeLo Performance on Different Scales](#comparison-of-selo-performance-on-different-scales)
+  * [Comparison of SeLo Performance on Different Retrieval Models](#comparison-of-selo-performance-on-different-retrieval-models)
   * [Analysis of Time Consumption](#analysis-of-time-consumption)
 * [Implementation](#implementation)
   * [Environment](#environment)
@@ -76,7 +76,7 @@ Start and enjoy!
 
 All experiments all carried out at Intel(R) Xeon(R) Gold 6226R CPU @2.90GHz and a single NVIDIA RTX 3090 GPU.
 
-#### Comparison of SeLo Performance of Different Trainsets
+#### Comparison of SeLo Performance on Different Trainsets
 
 |   Trainset   | ↑ Rsu |      ↑ Rda       | ↓ Ras | ↑ Rmi  |
 | ------------- | ------| -------------- | -------| -------|
@@ -86,7 +86,7 @@ All experiments all carried out at Intel(R) Xeon(R) Gold 6226R CPU @2.90GHz and 
 | RSICD  | 0.6661    | 0.5773  |  0.3875 | 0.6251
 
 
-#### Comparison of SeLo Performance of Different Scales
+#### Comparison of SeLo Performance on Different Scales
 
 |     | Scale-128 | Scale-256 | Scale-512 | Scale-768  | ↑ Rsu |      ↑ Rda       | ↓ Ras | ↑ Rmi  | Time (m)
 | --- | ----------| ----------| ----------| -----------| ----- |      -----       | ----- | -----  | -----  |
@@ -98,7 +98,7 @@ All experiments all carried out at Intel(R) Xeon(R) Gold 6226R CPU @2.90GHz and 
 |  s6 |    √      |  √        |  √        | √          | 0.6809 |     0.6884       | 0.3025 | 0.6886  | 36.28 |
 
 
-#### Comparison of SeLo Performance of Different Retrieval Models
+#### Comparison of SeLo Performance on Different Retrieval Models
 
 |   Trainset   | ↑ Rsu |      ↑ Rda       | ↓ Ras | ↑ Rmi  | Time (m) |
 | ------------- | ------| -------------- | -------| -------| -------- |
