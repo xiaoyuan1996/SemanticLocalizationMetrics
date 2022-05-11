@@ -32,14 +32,29 @@
 * [Citation](#citation)
 ### -------------------------------------------------------------------------------------
 
+
+
 ## INTRODUCTION
 An official evaluation metric for semantic localization.
+
+<img src="https://github.com/xiaoyuan1996/SemanticLocalizationMetrics/blob/master/figure/compare.jpg" width="700"  alt="compare"/>
+
+**Fig.1.** (a) Results of airplane detection. (b) Results of semantic localization with query of ``white planes parked in the open space of the white airport''. Compared with tasks such as detection, SeLo achieves semantic-level retrieval with only caption-level annotation during training, which can adapt to higher-level retrieval tasks.
+
+
+
+<img src="https://github.com/xiaoyuan1996/SemanticLocalizationMetrics/blob/master/figure/demo.gif" width="700"  alt="shwon"/>
+
+**Fig.2.** Visualization of SeLo.
+
 
 The semantic localization (SeLo) task refers to using cross-modal information such as text to quickly localize RS images at the semantic level [\[link\]](https://ieeexplore.ieee.org/document/9437331).
 This task implements semantic-level detection, which only uses caption-level supervision information.
 In our opinion, it is a meaningful and interesting work, which realizes the unification of sub-tasks such as detection and segmentation.
 
 ![visual image](./figure/SeLo.jpg)
+
+**Fig.3.** Framework of Semantic Localization. After multi-scale segmentation of large RS images, we perform cross-modal similarity calculation on query and multiple slices. The calculated regional probabilities are then utilized to pixel-level averaging, which generates the SeLo map after further noise suppression.
 
 We contribute test sets, evaluation metrics and baselines for semantic localization, and provide a detailed demo to use this evaluation framework.
 Any questions can open a Github [issue](https://github.com/xiaoyuan1996/SemanticLocalizationMetrics/issues).
@@ -52,6 +67,8 @@ Start and enjoy!
 ## DATASET AND METRICS
 
 #### TESTDATA
+
+<img src="https://github.com/xiaoyuan1996/SemanticLocalizationMetrics/blob/master/figure/sample.jpg" width="700"  alt="sample"/>
 
 |   Parameter   | Value |      Parameter       | Value  |
 | ------------- | ------| ---------------------| -------|
@@ -70,7 +87,7 @@ Start and enjoy!
 | Rda  | ↑ [ 0 ~ 1 ] | Makes attention center focus on one point |
 | Rmi  | ↑ [ 0 ~ 1 ] | Calculate the mean indicator of SeLo task |
 
-![visual image](./figure/indicator_verify.jpg)
+<img src="https://github.com/xiaoyuan1996/SemanticLocalizationMetrics/blob/master/figure/indicator_verify.jpg" width="700"  alt="shwon"/>
 
 ## BASELINES
 
