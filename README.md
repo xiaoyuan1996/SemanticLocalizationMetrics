@@ -79,7 +79,7 @@ Start and enjoy!
 
 #### METRICS
 
-<img src="https://github.com/xiaoyuan1996/SemanticLocalizationMetrics/blob/master/figure/indicator.jpg" width="700"  alt="shwon"/>
+<img src="https://github.com/xiaoyuan1996/SemanticLocalizationMetrics/blob/master/figure/indicator.jpg" width="900"  alt="shwon"/>
 
 
 | Indicator | Range | Meaning  |
