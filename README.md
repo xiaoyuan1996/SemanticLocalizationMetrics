@@ -265,6 +265,13 @@ So far, our attitude towards the semantic localization task is positive and opti
 We sincerely hope that this project will facilitate the development of semantic localization tasks.
 We welcome researchers to look into this direction, which is a possibility to achieve refined object semantic detection.
 
+![visual image](./figure/selo_with_subtask.jpg)
+
+**Fig.7.** Combine SeLo with other tasks. The top of the figure shows the detection results after add the SeLo map with query of “two parallel green
+playgrounds”. The bottom of the figure shows the road extraction results after add the SeLo map with query of “the red rails where the grey train is located
+run through the residential area”. (a) Source images. (b) Results of specific tasks. (c) Results of specific SeLo maps. (d) Fusion results of specific tasks and
+SeLo map.
+
 ## CITATION
 ```
 Z. Yuan et al., "Exploring a Fine-Grained Multiscale Method for Cross-Modal Remote Sensing Image Retrieval," in IEEE Transactions on Geoscience and Remote Sensing, doi: 10.1109/TGRS.2021.3078451.
