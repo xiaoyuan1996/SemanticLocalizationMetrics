@@ -45,7 +45,7 @@ An official evaluation metric for semantic localization.
 
 <img src="https://github.com/xiaoyuan1996/SemanticLocalizationMetrics/blob/master/figure/demo.gif" width="700"  alt="shwon"/>
 
-**Fig.2.** Visualization of SeLo.
+**Fig.2.** Visualization of SeLo with query of "the red rails where the grey train is located run through the residential area".
 
 
 The semantic localization (SeLo) task refers to using cross-modal information such as text to quickly localize RS images at the semantic level [\[link\]](https://ieeexplore.ieee.org/document/9437331).
@@ -68,7 +68,18 @@ Start and enjoy!
 
 #### TESTDATA
 
+We contribute a semantic localization testset to provide systematic evaluation for SeLo task. 
+The images in SLT come from Google Earth, and Fig. 4 exhibits several samples from the testset. 
+Every sample includes a large image in RS scene with the size of 3k × 2k to 10k × 10k, a query sentence, and one or more corresponding semantic bounding boxes.
+
 <img src="https://github.com/xiaoyuan1996/SemanticLocalizationMetrics/blob/master/figure/sample.jpg" width="700"  alt="sample"/>
+
+
+**Fig.4.** Four samples of Semantic Localization Testset. (a) Query: “ships without cargo floating on the black sea are docked in the port”. (b) Query: “a white
+airplane ready to take off on a grayblack runway”. (c) Query: “some cars are parked in a parking lot surrounded by green woods”. (d) Query: “the green
+football field is surrounded by a red track”.
+
+**TABLE I** Quantitative Statistics of Semantic Localization Testset.
 
 |   Parameter   | Value |      Parameter       | Value  |
 | ------------- | ------| ---------------------| -------|
@@ -77,10 +88,20 @@ Start and enjoy!
 | Channel Number| 3     |  Ave Region Number   |  1.75  |
 | Image Number  | 22    | Ave Attention Ratio  |  0.068 |
 
+
+
+
 #### METRICS
+
+We systematically model and study semantic localization in detail, and propose multiple discriminative evaluation metrics to quantify this task based on significant area proportion, attention shift distance, and discrete attention distance.
 
 <img src="https://github.com/xiaoyuan1996/SemanticLocalizationMetrics/blob/master/figure/indicator.jpg" width="900"  alt="shwon"/>
 
+**Fig.5.** Three proposed evaluation metrics for semantic localization. (a) Rsu aims to calculate the attention ratio of the ground-truth area to the useless
+area. (b) Ras attempts to quantify the shift distance of the attention from the GT center. (c) Rda evaluates the discreteness of the generated attention from
+probability divergence distance and candidate attention number.
+
+**TABLE II** Explanation of the indicators.
 
 | Indicator | Range | Meaning  |
 | --------- | ------| ---------|
@@ -89,7 +110,12 @@ Start and enjoy!
 | Rda  | ↑ [ 0 ~ 1 ] | Makes attention center focus on one point |
 | Rmi  | ↑ [ 0 ~ 1 ] | Calculate the mean indicator of SeLo task |
 
+
+
 <img src="https://github.com/xiaoyuan1996/SemanticLocalizationMetrics/blob/master/figure/indicator_verify.jpg" width="700"  alt="shwon"/>
+
+**Fig.6.** Qualitative analysis of SeLo indicator validity. (a) Query: “eight large white oil storage tanks built on grey concrete floor”. (b) Query: “a white plane
+parked in a tawny clearing inside the airport”. (c) Query: “lots of white and black planes parked inside the grey and white airport”.
 
 ## BASELINES
 
@@ -189,7 +215,7 @@ All experiments all carried out at Intel(R) Xeon(R) Gold 6226R CPU @2.90GHz and 
 Run the follow command, and generated SeLo maps will be saved in **cache/**. 
 ```
    $ cd predict
-   $ nohup python generate_slm.py --cache_path cache/RSITMD_AMFMN
+   $ nohup python generate_selo.py --cache_path cache/RSITMD_AMFMN
    $ tail -f cache/RSITMD_AMFMN/log.txt
 
     2022-05-05 22:01:58,180 - __main__ - INFO - Processing 31/59: 20.jpg
@@ -231,7 +257,7 @@ Run the follow command, and generated SeLo maps will be saved in **cache/**.
 4. Add the class of  **EncoderSpecModel** to **model_encoder.py**.
 5. Run:
 ```
-python generate_slm.py --yaml_path option/xxx.yaml --cache_path cache/xxx
+python generate_selo.py --yaml_path option/xxx.yaml --cache_path cache/xxx
 ```
 
 ## EPILOGUE
