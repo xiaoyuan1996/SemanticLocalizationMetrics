@@ -1,4 +1,4 @@
-# Learning to Evaluate Peformance of Multi-modal Semantic Localization 
+# Learning to Evaluate Performance of Multi-modal Semantic Localization 
 (undergoing review)
 ##### Author: Zhiqiang Yuan, Chongyang Li, Zhuoying Pan, et. al 
 
