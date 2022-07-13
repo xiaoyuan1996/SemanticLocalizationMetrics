@@ -280,5 +280,5 @@ Z. Yuan et al., "A Lightweight Multi-scale Crossmodal Text-Image Retrieval Metho
 
 Z. Yuan et al., "Remote Sensing Cross-Modal Text-Image Retrieval Based on Global and Local Information," in IEEE Transactions on Geoscience and Remote Sensing, doi: 10.1109/TGRS.2022.3163706.
 
-Z. Yuan et al., "Learning to Evaluate Peformance of Multi-modal Semantic Localization," undergoing review.
+Z. Yuan et al., "Learning to Evaluate Performance of Multi-modal Semantic Localization," undergoing review.
 ```
