@@ -146,8 +146,8 @@ if __name__ == "__main__":
 
     # settings
     parser = argparse.ArgumentParser(description="SLM")
-    parser.add_argument("--yaml_path", type=str, default="option/RSITMD/RSITMD_SCAN.yaml", help="config yaml path")
-    parser.add_argument("--cache_path", type=str, default="cache/RSITMD_SCAN", help="cache path")
+    parser.add_argument("--yaml_path", type=str, default="option/RSITMD/RSITMD_AMFMN.yaml", help="config yaml path")
+    parser.add_argument("--cache_path", type=str, default="cache/RSITMD_AMFMN", help="cache path")
     parser.add_argument("--src_data_path", type=str, default="../test_data/imgs", help="testset images path")
     parser.add_argument("--src_anno_path", type=str, default="../test_data/annotations/anno.json", help="testset annotations path")
     parser.add_argument("--step", type=str, default="256_512_768", help="step")
