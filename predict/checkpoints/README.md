@@ -6,7 +6,7 @@ Download SLM_checkpoints.zip, unzip it and put it here.
 ---predict
 -----...
 -----checkpoints
--------RSITMD_AMFMN.tar
+-------AMFMN.tar
 -------RSITMD_LW_MCR.tar
 
 ```
