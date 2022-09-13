@@ -46,7 +46,7 @@ optim:
     grad_clip: 0
     max_violation: 0
     margin: 0.2
-    resume: "./checkpoints/RSITMD_AMFMN.tar"
+    resume: "./checkpoints/AMFMN.tar"
 logs:
     eval_step: 1
     print_freq: 10
