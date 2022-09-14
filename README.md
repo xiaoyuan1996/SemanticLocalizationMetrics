@@ -1,4 +1,4 @@
-## The offical PyTorch code for paper "Learning to Evaluate Performance of Multi-modal Semantic Localization", TGRS 2022.
+## The offical PyTorch code for paper ["Learning to Evaluate Performance of Multi-modal Semantic Localization", TGRS 2022.](https://doi.org/10.1109/TGRS.2022.3207171)
 ##### Author: Zhiqiang Yuan, Chongyang Li, Zhuoying Pan, et. al 
 
 <a href="https://github.com/xiaoyuan1996/retrievalSystem"><img src="https://travis-ci.org/Cadene/block.bootstrap.pytorch.svg?branch=master"/></a>
@@ -185,7 +185,7 @@ All experiments all carried out at Intel(R) Xeon(R) Gold 6226R CPU @2.90GHz and 
 2.Prepare checkpoints and test iamges:
 
 
-* Download pretrain checkpoints **SLM_checkpoints.zip** to **./predict/checkpoints/** from [BaiduYun (passwd: NIST)](https://pan.baidu.com/s/1DyRbY7s3jx-ZCWbcC_XHlw) or [GoogleDriver](https://drive.google.com/drive/folders/1LISJHiLVxPCiry1i7xJtOvuQ77nbEZD1?usp=sharing), make sure:
+* Download pretrain checkpoints **SLM_checkpoints.zip** to **./predict/checkpoints/** from [GoogleDriver](https://drive.google.com/drive/folders/1LISJHiLVxPCiry1i7xJtOvuQ77nbEZD1?usp=sharing), make sure:
    
   + ./predict/checkpoints/
     + xxx.pth
@@ -273,11 +273,14 @@ SeLo map.
 
 ## CITATION
 ```
+Z. Yuan et al., "Learning to Evaluate Performance of Multi-modal Semantic Localization," in IEEE Transactions on Geoscience and Remote Sensing, doi: 10.1109/TGRS.2022.3207171.
+```
+
+## OTHER CITATION
+```
 Z. Yuan et al., "Exploring a Fine-Grained Multiscale Method for Cross-Modal Remote Sensing Image Retrieval," in IEEE Transactions on Geoscience and Remote Sensing, doi: 10.1109/TGRS.2021.3078451.
 
 Z. Yuan et al., "A Lightweight Multi-scale Crossmodal Text-Image Retrieval Method In Remote Sensing," in IEEE Transactions on Geoscience and Remote Sensing, doi: 10.1109/TGRS.2021.3124252.
 
 Z. Yuan et al., "Remote Sensing Cross-Modal Text-Image Retrieval Based on Global and Local Information," in IEEE Transactions on Geoscience and Remote Sensing, doi: 10.1109/TGRS.2022.3163706.
-
-Z. Yuan et al., "Learning to Evaluate Performance of Multi-modal Semantic Localization," in IEEE Transactions on Geoscience and Remote Sensing.
 ```
