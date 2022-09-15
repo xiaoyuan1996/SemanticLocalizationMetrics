@@ -1,4 +1,4 @@
-## The offical PyTorch code for paper ["Learning to Evaluate Performance of Multi-modal Semantic Localization", TGRS 2022.](https://doi.org/10.1109/TGRS.2022.3207171)
+## The offical code for paper ["Learning to Evaluate Performance of Multi-modal Semantic Localization", TGRS 2022.](https://doi.org/10.1109/TGRS.2022.3207171)
 ##### Author: Zhiqiang Yuan, Chongyang Li, Zhuoying Pan, et. al 
 
 <a href="https://github.com/xiaoyuan1996/retrievalSystem"><img src="https://travis-ci.org/Cadene/block.bootstrap.pytorch.svg?branch=master"/></a>
