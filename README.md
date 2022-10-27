@@ -185,7 +185,7 @@ All experiments all carried out at Intel(R) Xeon(R) Gold 6226R CPU @2.90GHz and 
 2.Prepare checkpoints and test iamges:
 
 
-* Download pretrain checkpoints **SLM_checkpoints.zip** to **./predict/checkpoints/** from [GoogleDriver](https://drive.google.com/drive/folders/1LISJHiLVxPCiry1i7xJtOvuQ77nbEZD1?usp=sharing), make sure:
+* Download pretrain checkpoints **AMFMN.tar** to **./predict/checkpoints/** from [GoogleDriver](https://drive.google.com/drive/folders/1LISJHiLVxPCiry1i7xJtOvuQ77nbEZD1?usp=sharing), make sure:
    
   + ./predict/checkpoints/
     + xxx.pth
