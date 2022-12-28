@@ -11,7 +11,7 @@
 ### Welcome :+1:_<big>`Fork and Star`</big>_:+1:, then we'll let you know when we update
 
 ### -------------------------------------------------------------------------------------
-
+We have newly released SeLo v2<a href="[https://pypi.org/project/mitype/](https://github.com/xiaoyuan1996/SemanticLocalizationMetrics/blob/master/README_v2.md)">
 #### Contexts
 
 * [Introduction](#introduction)
