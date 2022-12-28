@@ -11,7 +11,7 @@
 ### Welcome :+1:_<big>`Fork and Star`</big>_:+1:, then we'll let you know when we update
 
 ### -------------------------------------------------------------------------------------
-**We recently released SeLo v2, which improves on SeLo and improves the speed and accuracy of SeLo tasks.**[\[link\]](https://github.com/xiaoyuan1996/SemanticLocalizationMetrics/blob/master/README_v2.md).
+### We recently released SeLo v2[\[link\]](https://github.com/xiaoyuan1996/SemanticLocalizationMetrics/blob/master/README_v2.md)., which improves on SeLo and improves the speed and accuracy of SeLo tasks.
 
 ### -------------------------------------------------------------------------------------
 
