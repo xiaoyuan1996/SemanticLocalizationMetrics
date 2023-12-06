@@ -198,7 +198,7 @@ All experiments all carried out at Intel(R) Xeon(R) Gold 6226R CPU @2.90GHz and 
   + ./test_data/imgs/
     + xxx.tif
 
-3.Download SkipThought Files to **/data** from [seq2vec (Password:NIST)](https://pan.baidu.com/s/1jz61ZYs8NZflhU_Mm4PbaQ) (or other path, but you should change the **option['model']['seq2vec']['dir_st']**)
+3.Download SkipThought Files to **/data** from [seq2vec (Password:NIST)](https://pan.baidu.com/s/1FOPldSGO6ctETiXMlPGC8g) (or other path, but you should change the **option['model']['seq2vec']['dir_st']**)
 
 4.Check the environments
 
